@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For My Love</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="title">For My Love</h1>
+      <p class="subtitle">A small page from Roy</p>
+      <div class="buttons">
+        <button id="btn-message" class="btn">Message</button>
+        <button id="btn-xmas" class="btn">Christmas Wish</button>
+        <button id="btn-gift" class="btn">Gift</button>
+      </div>
+      <footer class="credit">Made with ❤️</footer>
+    </div>
+  </main>
+
+  <!-- Message Modal -->
+  <div id="modal" class="modal" aria-hidden="true"> 
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Close">×</button>
+      <h2 id="modal-title" class="modal-title"></h2>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Gift Dialog -->
+  <div id="giftDialog" class="modal" aria-hidden="true"> 
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="gift-title">
+      <button class="modal-close" aria-label="Close">×</button>
+      <h2 id="gift-title">Will you be mine forever?</h2>
+      <div class="modal-body gifts">
+        <button id="btn-yes" class="btn yes">Yes I will</button>
+        <button id="btn-no" class="btn no">No am sorry</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fullscreen celebration / sorrow overlays -->
+  <div id="celebrate" class="overlay-full hidden" aria-hidden="true">
+    <div class="celebrate-msg">
+      <h1 id="celebrate-text">You made me the happiest — Forever yours!</h1>
+    </div>
+  </div>
+
+  <div id="sorrow" class="overlay-full hidden" aria-hidden="true">
+    <div class="sorrow-msg">
+      <h1>💔</h1>
+      <p>I'm sorry</p>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
